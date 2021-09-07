@@ -1,2 +1,124 @@
 /* Importing/Linking to the Poppins Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box includes padding and border when setting a width or height */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+#name {
+    font-family: 'Indie Flower', cursive;
+    font-size: 80px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+a {
+    /* Removes the underline on a link  */
+    text-decoration: none;
+    color: rgb(127, 23, 175);
+}
+
+#main {
+    position: relative;
+    /* VH (Viewport Height) determines the height of the element by setting it to a percentage of the viewport. (NOTE: VW is used for width) */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* OR */
+    /* place-items: center; */
+
+    /* So the text does not go against the edge on smaller screen sizes. */
+    padding: 0 20px;
+}
+
+#video-container {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Object-fit property determines how a video or image (AKA Img Element) is resized to fit inside its container (AKA parent element). Setting the value to "cover" causes the video to retain its aspect ratio and fill the given dimension.  */
+    object-fit: cover;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 173, 173, 0.7);
+}
+
+#content {
+    color: rgb(3, 18, 99);
+    z-index: 3;
+    text-align: center;
+}
+
+#click {
+    /* Inline-block allows you to set top and bottom margin as well as width and height. This is not the case with inline. */
+    display: inline-block;
+    margin-top: 25px;
+    border: 2px solid rgb(3, 18, 99);
+    padding: 10px 30px;
+    background-color:rgb(127, 23, 175);
+    color: rgb(3, 18, 99);
+    border-radius: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+#click:hover {
+    /* Changes the size of an element */
+    transform: scale(0.95);
+}
+
+#about {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(3, 18, 99, 0.7);
+}
+
+#about p {
+    font-size: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#about h2 {
+    margin: 40px 0;
+    color: rgb(127, 23, 175);
+}
+
+i {
+    font-size: 48px;
+    margin: 0 5px;
+}
